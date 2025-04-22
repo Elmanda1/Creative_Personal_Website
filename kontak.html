@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontak - Falih Elmanda Ghaisan</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header id="top-header">
+      <h1>My Creative Personal Website</h1>
+      <!-- Navigasi utama -->
+      <ul class="top-nav">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="jadwal.html">Jadwal</a></li>
+        <!-- Halaman aktif sekarang -->
+        <li class="active"><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </header>
+
+    <!-- Bagian Utama Kontak -->
+    <main class="kontak-section">
+      <h2>Formulir Kontak & Feedback</h2>
+
+      <!-- Formulir Kontak -->
+      <form
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-kontak"
+      >
+        <!-- Input Nama -->
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Contoh: Falih Elmanda Ghaisan"
+            required
+          />
+        </div>
+
+        <!-- Input Tempat dan Tanggal Lahir -->
+        <div class="form-group">
+          <label>Tempat, Tanggal Lahir:</label>
+          <input
+            type="text"
+            id="tempatLahir"
+            name="tempat"
+            placeholder="Tempat Lahir"
+            required
+          />
+          <div class="tanggal-lahir-group">
+            <!-- Pilihan Hari -->
+            <select name="hari" required>
+              <option disabled selected>Hari</option>
+              <!-- daftar 1-31 -->
+              <!-- ... -->
+              <option value="31">31</option>
+            </select>
+
+            <!-- Pilihan Bulan -->
+            <select name="bulan" required>
+              <option disabled selected>Bulan</option>
+              <!-- daftar bulan -->
+              <option value="12">Desember</option>
+            </select>
+
+            <!-- Pilihan Tahun -->
+            <select name="tahun" required>
+              <option disabled selected>Tahun</option>
+              <!-- daftar tahun -->
+              <option value="2010">2010</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Input Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Contoh: akufalih@gmail.com"
+            required
+          />
+        </div>
+
+        <!-- Input Nomor HP -->
+        <div class="form-group">
+          <label for="No-HP">No. Hp:</label>
+          <input
+            type="text"
+            id="nohp"
+            name="nohp"
+            inputmode="numeric"
+            maxlength="12"
+            placeholder="Contoh: 081234567890"
+            required
+          />
+        </div>
+
+        <!-- Input Alamat -->
+        <div class="form-group">
+          <label for="Alamat">Alamat</label>
+          <input
+            type="text"
+            id="Alamat"
+            name="a"
+            placeholder="Contoh: Jl. Mampang Prapatan no 3"
+            required
+          />
+        </div>
+
+        <!-- Pilihan Jenis Feedback (Radio Button) -->
+        <div class="form-group">
+          <label>Jenis Feedback:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="jenis" value="Kritik" required />
+              Kritik</label
+            >
+            <label
+              ><input type="radio" name="jenis" value="Saran" /> Saran</label
+            >
+            <label
+              ><input type="radio" name="jenis" value="Pertanyaan" />
+              Pertanyaan</label
+            >
+          </div>
+        </div>
+
+        <!-- Topik Terkait (Checkbox) -->
+        <div class="form-group">
+          <label>Topik Terkait:</label>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="topik" value="Desain" />
+              Desain</label
+            >
+            <label
+              ><input type="checkbox" name="topik" value="Fitur" /> Fitur</label
+            >
+            <label
+              ><input type="checkbox" name="topik" value="Kecepatan" />
+              Kecepatan</label
+            >
+            <label
+              ><input type="checkbox" name="topik" value="Lainnya" />
+              Lainnya</label
+            >
+          </div>
+        </div>
+
+        <!-- Input Pesan -->
+        <div class="form-group">
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" rows="9" required></textarea>
+        </div>
+
+        <!-- Upload File -->
+        <div class="form-group">
+          <label for="lampiran">Upload File (Opsional):</label>
+          <input
+            type="file"
+            id="lampiran"
+            name="lampiran"
+            accept=".jpg,.jpeg,.png,.pdf"
+          />
+        </div>
+
+        <!-- Tombol Kirim -->
+        <div class="form-group">
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 Falih Elmanda Ghaisan. All rights reserved.
+    </footer>
+  </body>
+</html>
